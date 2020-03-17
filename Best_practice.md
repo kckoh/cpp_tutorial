@@ -45,6 +45,7 @@ https://www.learncpp.com/cpp-tutorial/header-guards/
 17. Order your #includes as follow: your own user-defined headers first, then 3rd party library headers, then standard library headers, with the headers in each section sorted alphabetically.
 
 # few more recommendations for header file
+
 18. Always include header guards (we’ll cover these next lesson).
 
 19. Give your header files the same name as the source files they’re associated with (e.g. grades.h is paired with grades.cpp).
@@ -54,3 +55,13 @@ https://www.learncpp.com/cpp-tutorial/header-guards/
 Only #include what you need (don’t include everything just because you can).
 23. Do not #include .cpp files.
 24. Do not define variables and functions in header files 
+
+#header guard
+25. example
+    #ifndef SOME_UNIQUE_NAME_HERE
+    #define SOME_UNIQUE_NAME_HERE
+    
+    // your declarations (and certain types of definitions) here
+    
+    #endif
+26. set to the full filename of the header file typed in caps
