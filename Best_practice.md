@@ -1,6 +1,6 @@
 gcc file_name -o name -Wall -Weffc++ -Wextra -Wsign-conversion -Werror -pedantic-errors -lstdc++
 
-https://www.learncpp.com/cpp-tutorial/basic-debugging-tactics/
+https://www.learncpp.com/cpp-tutorial/introduction-to-scientific-notation/
 
 #compiler
 1. Disable compiler extensions to ensure your programs remain compliant with C++ standards and will work on any system.
