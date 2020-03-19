@@ -65,3 +65,11 @@ Only #include what you need (don’t include everything just because you can).
     
     #endif
 26. set to the full filename of the header file typed in caps
+
+#float
+
+27. Favor double over float unless space is at a premium, as the lack of precision in a float will often lead to inaccuracies.
+28. A corollary of this rule is: never use floating point numbers for financial or currency data.
+
+#char
+29. Always put stand-alone chars in single quotes (e.g. ‘t’ or ‘\n’, not “t” or “\n”). This helps the compiler optimize more effectively.
