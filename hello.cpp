@@ -6,7 +6,7 @@ int main(){
     bool b{};
     bool b1{};
     std::cout << std::boolalpha;
-    std::cout << "Enter a true or false\n"; 
+    std::cout << "Enter a tru or false\n"; 
     std::cin >>b;
     std::cout << "Enter a true or false\n"; 
     std::cin >>b1;
