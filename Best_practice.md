@@ -73,3 +73,7 @@ Only #include what you need (don’t include everything just because you can).
 
 #char
 29. Always put stand-alone chars in single quotes (e.g. ‘t’ or ‘\n’, not “t” or “\n”). This helps the compiler optimize more effectively.
+
+#const
+30. Any variable that should not be modifiable after initialization and whose initializer is known at compile-time should be declared as constexpr.
+31. Any variable that should not be modifiable after initialization and whose initializer is not known at compile-time should be declared as const.
