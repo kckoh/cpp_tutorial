@@ -77,3 +77,13 @@ Only #include what you need (don’t include everything just because you can).
 #const
 30. Any variable that should not be modifiable after initialization and whose initializer is known at compile-time should be declared as constexpr.
 31. Any variable that should not be modifiable after initialization and whose initializer is not known at compile-time should be declared as const.
+
+#conditional statement
+32. Don’t add unnecessary == or != to conditions. It makes them harder to read without offering any additional value.
+
+
+#floating number comparison
+33. Avoid using operator== and operator!= with floating point operands.
+
+
+
