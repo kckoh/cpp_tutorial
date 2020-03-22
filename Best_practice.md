@@ -1,6 +1,6 @@
 gcc file_name -o name -Wall -Weffc++ -Wextra -Wsign-conversion -Werror -pedantic-errors -lstdc++
 
-https://www.learncpp.com/cpp-tutorial/introduction-to-scientific-notation/
+https://www.learncpp.com/cpp-tutorial/using-statements/
 
 #compiler
 1. Disable compiler extensions to ensure your programs remain compliant with C++ standards and will work on any system.
@@ -85,5 +85,14 @@ Only #include what you need (don’t include everything just because you can).
 #floating number comparison
 33. Avoid using operator== and operator!= with floating point operands.
 
+#global varibale
+34. Consider using a g” or “g_” prefix for global variables to help differentiate them from local variables.
+
+35. If you need global constants and your compiler is C++17 capable, prefer defining inline constexpr global variables in a header file.
+
+36. Use local variables instead of global variables whenever possible.
+37. other best practice for global variables: https://www.learncpp.com/cpp-tutorial/why-global-variables-are-evil/
+
+38. avoid using directives altogether. Using declarations are okay to use inside blocks, where their impact is limited, but not in the global scope.
 
 
