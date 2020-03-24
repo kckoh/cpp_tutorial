@@ -2,7 +2,7 @@ gcc file_name -o name -Wall -Weffc++ -Wextra -Wsign-conversion -Werror -pedantic
 
 https://www.learncpp.com/cpp-tutorial/using-statements/
 
-#compiler
+# compiler
 1. Disable compiler extensions to ensure your programs remain compliant with C++ standards and will work on any system.
     a. -pedantic-errors
 
@@ -12,7 +12,7 @@ https://www.learncpp.com/cpp-tutorial/using-statements/
 3. Favor direct brace initialization whenever possible.
     a. int width{ 5 };
 
-#variable
+# variable
 
 4. Initialize your variables upon creation.
 
@@ -24,10 +24,10 @@ https://www.learncpp.com/cpp-tutorial/using-statements/
     a. variable and function: begin with lower case
     b. structs, classes, and enumerations: begin with upper case
 
-#namespace
+# namespace
 9. Use explicit namespace prefixes to access identifiers defined in a namespace
 
-#header file
+# header file
 10. Header files should generally not contain function and variable definitions, so as not to violate the one definition rule. An exception is made for symbolic constants
 
 11. Use a .h suffix when naming your header file
@@ -52,11 +52,11 @@ https://www.learncpp.com/cpp-tutorial/using-statements/
 20. Each header file should have a specific job
 21. Be mindful of which headers you need to explicitly include for the functionality that you are using in your code files
 22. Every header you write should compile on its own (it should #include every dependency it needs)
-Only #include what you need (don’t include everything just because you can).
+Only "#include" what you need (don’t include everything just because you can).
 23. Do not #include .cpp files.
 24. Do not define variables and functions in header files 
 
-#header guard
+# header guard
 25. example
     #ifndef SOME_UNIQUE_NAME_HERE
     #define SOME_UNIQUE_NAME_HERE
@@ -66,26 +66,26 @@ Only #include what you need (don’t include everything just because you can).
     #endif
 26. set to the full filename of the header file typed in caps
 
-#float
+# float
 
 27. Favor double over float unless space is at a premium, as the lack of precision in a float will often lead to inaccuracies.
 28. A corollary of this rule is: never use floating point numbers for financial or currency data.
 
-#char
+# char
 29. Always put stand-alone chars in single quotes (e.g. ‘t’ or ‘\n’, not “t” or “\n”). This helps the compiler optimize more effectively.
 
-#const
+# const
 30. Any variable that should not be modifiable after initialization and whose initializer is known at compile-time should be declared as constexpr.
 31. Any variable that should not be modifiable after initialization and whose initializer is not known at compile-time should be declared as const.
 
-#conditional statement
+# conditional statement
 32. Don’t add unnecessary == or != to conditions. It makes them harder to read without offering any additional value.
 
 
-#floating number comparison
+# floating number comparison
 33. Avoid using operator== and operator!= with floating point operands.
-
-#global varibale
+ 
+# global varibale
 34. Consider using a g” or “g_” prefix for global variables to help differentiate them from local variables.
 
 35. If you need global constants and your compiler is C++17 capable, prefer defining inline constexpr global variables in a header file.
@@ -93,6 +93,13 @@ Only #include what you need (don’t include everything just because you can).
 36. Use local variables instead of global variables whenever possible.
 37. other best practice for global variables: https://www.learncpp.com/cpp-tutorial/why-global-variables-are-evil/
 
+# directive
 38. avoid using directives altogether. Using declarations are okay to use inside blocks, where their impact is limited, but not in the global scope.
+
+# auto
+39. Avoid using type inference for function return types but okay for variable
+
+# casting
+40. Favor static_cast when you need to convert a value from one type to another type
 
 
