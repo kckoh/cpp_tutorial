@@ -1,6 +1,6 @@
 gcc file_name -o name -Wall -Weffc++ -Wextra -Wsign-conversion -Werror -pedantic-errors -lstdc++
 
-https://www.learncpp.com/cpp-tutorial/using-statements/
+https://www.learncpp.com/cpp-tutorial/6-8a-pointer-arithmetic-and-array-indexing/
 
 # compiler
 1. Disable compiler extensions to ensure your programs remain compliant with C++ standards and will work on any system.
@@ -101,5 +101,11 @@ Only "#include" what you need (don’t include everything just because you can).
 
 # casting
 40. Favor static_cast when you need to convert a value from one type to another type
+
+#string
+41. Use std::string or std::string_view  instead of C-style strings.
+
+# pointer
+42. Favor the pointer syntax (*) over the array syntax ([]) for array function parameters.
 
 
