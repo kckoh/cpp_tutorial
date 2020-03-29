@@ -1,6 +1,6 @@
 gcc file_name -o name -Wall -Weffc++ -Wextra -Wsign-conversion -Werror -pedantic-errors -lstdc++
 
-https://www.learncpp.com/cpp-tutorial/6-8a-pointer-arithmetic-and-array-indexing/
+https://www.learncpp.com/cpp-tutorial/69-dynamic-memory-allocation-with-new-and-delete/
 
 # compiler
 1. Disable compiler extensions to ensure your programs remain compliant with C++ standards and will work on any system.
@@ -107,5 +107,7 @@ Only "#include" what you need (don’t include everything just because you can).
 
 # pointer
 42. Favor the pointer syntax (*) over the array syntax ([]) for array function parameters.
+
+43. Set deleted pointers to 0 (or nullptr in C++11) unless they are going out of scope immediately afterward
 
 
