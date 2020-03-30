@@ -1,6 +1,6 @@
 gcc file_name -o name -Wall -Weffc++ -Wextra -Wsign-conversion -Werror -pedantic-errors -lstdc++
 
-https://www.learncpp.com/cpp-tutorial/69-dynamic-memory-allocation-with-new-and-delete/
+https://www.learncpp.com/cpp-tutorial/6-9a-dynamically-allocating-arrays/
 
 # compiler
 1. Disable compiler extensions to ensure your programs remain compliant with C++ standards and will work on any system.
