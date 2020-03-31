@@ -110,4 +110,13 @@ Only "#include" what you need (don’t include everything just because you can).
 
 43. Set deleted pointers to 0 (or nullptr in C++11) unless they are going out of scope immediately afterward
 
+44. When using a pointer to access the value of a member, use operator-> instead of operator. (the . operator) 
+
+# reference
+45. Rule: Pass non-pointer, non-fundamental data type variables (such as structs) by (const) reference.
+
+46. In for-each loops element declarations, if your elements are non-fundamental types, use references or const references for performance reasons: https://www.learncpp.com/cpp-tutorial/6-12a-for-each-loops/
+
+
+
 
