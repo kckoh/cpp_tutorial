@@ -1,6 +1,6 @@
 gcc file_name -o name -Wall -Weffc++ -Wextra -Wsign-conversion -Werror -pedantic-errors -lstdc++
 
-https://www.learncpp.com/cpp-tutorial/6-9a-dynamically-allocating-arrays/
+https://www.learncpp.com/cpp-tutorial/613-void-pointers/
 
 # compiler
 1. Disable compiler extensions to ensure your programs remain compliant with C++ standards and will work on any system.
@@ -51,8 +51,7 @@ https://www.learncpp.com/cpp-tutorial/6-9a-dynamically-allocating-arrays/
 19. Give your header files the same name as the source files they’re associated with (e.g. grades.h is paired with grades.cpp).
 20. Each header file should have a specific job
 21. Be mindful of which headers you need to explicitly include for the functionality that you are using in your code files
-22. Every header you write should compile on its own (it should #include every dependency it needs)
-Only "#include" what you need (don’t include everything just because you can).
+22. Every header you write should compile on its own (it should #include every dependency it needs) Only "#include" what you need (don’t include everything just because you can).
 23. Do not #include .cpp files.
 24. Do not define variables and functions in header files 
 
@@ -117,6 +116,16 @@ Only "#include" what you need (don’t include everything just because you can).
 
 46. In for-each loops element declarations, if your elements are non-fundamental types, use references or const references for performance reasons: https://www.learncpp.com/cpp-tutorial/6-12a-for-each-loops/
 
+# algorithm
+47. Favor using functions from the algorithms library over writing your own functionality to do the same thing
+
+# functions
+
+48. pass by value: the best way to accept parameters of fundamental types when the function does not need to change the argument
+
+49. pass by reference: Use pass by (const) reference instead of pass by value for structs and classes and other expensive-to-copy types.
+
+50. pass by address: Prefer pass by reference to pass by address whenever applicable.
 
 
 
